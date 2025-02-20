@@ -1,5 +1,5 @@
 import type React from "react"
-import { Providers } from "./providers"
+import { Providers } from "@/app/providers"
 import "./globals.css"
 
 export const metadata = {
