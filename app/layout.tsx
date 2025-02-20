@@ -1,9 +1,10 @@
+import type React from "react"
 import { Providers } from "./providers"
 import "./globals.css"
 
 export const metadata = {
-  title: 'Lectio',
-  description: 'AI-powered Bible study companion',
+  title: "Lectio",
+  description: "AI-powered Bible study companion",
 }
 
 export default function RootLayout({
@@ -12,11 +13,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
-        <Providers>
-          {children}
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
